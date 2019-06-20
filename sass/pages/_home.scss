@@ -98,8 +98,9 @@
         }
 
         @include respond (tab-port) {
-            background-image: none;
-            background-color: $color-white;
+            //background-image: none;
+            background-color: rgba
+            ($color-grey-light-2, 0.7);
         }
     }
 }

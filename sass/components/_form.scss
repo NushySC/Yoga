@@ -16,6 +16,11 @@
         display: block;
         transition: all, .3s;
 
+        @include respond (tab-port) {
+            //background-image: none;
+            background-color: rgba($color-grey-dark-2, .5);
+        }
+
         &::-webkit-input-placeholder {
             color: $color-grey-dark-2;
         }
@@ -39,7 +44,7 @@
         transition: all, .3s;
     }
 
-    &__input:placeholder-shown + &__label {
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem)
@@ -50,7 +55,7 @@
         display: inline-block;
 
         @include respond(phone) {
-            width:100%;
+            width: 100%;
             margin-bottom: 1rem;
         }
     }
@@ -58,7 +63,7 @@
     &__radio-input {
         display: none;
     }
-    
+
     &__radio-label {
         font-size: $default-font-size;
         cursor: pointer;
@@ -92,7 +97,7 @@
         }
     }
 
-    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    &__radio-input:checked~&__radio-label &__radio-button::after {
         opacity: 1;
     }
 }
