@@ -2,6 +2,10 @@
     background-color: $color-grey-light-1;
     padding: 25rem 0;
     margin-top: -15vh;
+
+    @include respond(phone) {
+        margin-top: -25vh;
+    }
 }
 
 .section-features {
@@ -78,6 +82,7 @@
         background-image: none;
         background-color: $color-white;
     }
+    
 
     &__form {
         width: 50%;
@@ -86,6 +91,11 @@
         @include respond (tab-port) {
             width: 100%;
             padding: 3rem;
+        }
+
+        @include respond (tab-port) {
+            background-image: none;
+            background-color: $color-white;
         }
     }
 }
