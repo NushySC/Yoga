@@ -6,6 +6,10 @@
     @include respond(phone) {
         margin-top: -25vh;
     }
+
+    @include respond(tab-port) {
+        margin-top: -20vh;
+    }
 }
 
 .section-features {
