@@ -846,7 +846,7 @@ body {
   right: 5.5rem;
   background-image: radial-gradient(#f55c8a, #a11f46);
   z-index: 1000;
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+  transition: transform 0.6s cubic-bezier(0.86, 0, 0.07, 1); }
   @media only screen and (max-width: 37.5em) {
     .navigation__background {
       top: 3.5rem;
@@ -856,11 +856,11 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -50;
   z-index: 1500;
   opacity: 0;
   width: 0;
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
   position: absolute;
@@ -884,7 +884,7 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all .4s; }
+  transition: all .2s; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
